@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <title>Amer's tic-tac-toe :)</title>
+  </head>
+  <body>
+    <h1>
+      Figth between <span id="good-side-tag">Jedi</span> and
+      <span id="evil-side-tag">Darth Maul</span>
+    </h1>
+
+    <seciton id="tic-tac-toe-grid">
+      <div id="grid">
+        <div id="grid-cell" data-cell></div>
+        <div id="grid-cell" data-cell></div>
+        <div id="grid-cell" data-cell></div>
+        <div id="grid-cell" data-cell></div>
+        <div id="grid-cell" data-cell></div>
+        <div id="grid-cell" data-cell></div>
+        <div id="grid-cell" data-cell></div>
+        <div id="grid-cell" data-cell></div>
+        <div id="grid-cell" data-cell></div>
+      </div>
+      <div id="button-wrapper">
+        <div id="button-gameMode-wrapper">
+          <button class="button-gameMode">Player vs Player</button>
+          <button class="button-gameMode">Player vs AI</button>
+        </div>
+        <button id="button-reset" data-reset>withdraw from the battlefield</button>
+      </div>
+    </seciton>
+
+    <script src="app.js"></script>
+  </body>
+</html>
