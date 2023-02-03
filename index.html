@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Permanent+Marker&display=swap" rel="stylesheet" />
     <title>Amer's tic-tac-toe :)</title>
   </head>
   <body>
@@ -33,12 +30,15 @@
       </div>
       <div id="button-wrapper">
         <div id="button-gameMode-wrapper">
-          <button class="button-gameMode">Player vs Player</button>
-          <button class="button-gameMode">Player vs AI</button>
+          <button class="button-gameMode" id="button-gameMode-player" data-player>Player vs Player</button>
+          <button class="button-gameMode" id="button-gameMode-ai" data-ai>Player vs AI</button>
         </div>
         <button id="button-reset" data-reset>withdraw from the battlefield</button>
       </div>
     </seciton>
+    <div id="overlay" data-overlay>
+      <h2 data-overlay-h2>PLAYER ONE</h2>
+    </div>
 
     <script src="app.js"></script>
   </body>

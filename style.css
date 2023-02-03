@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Itim", cursive;
 }
 
 body {
@@ -17,10 +18,12 @@ h1 {
 
 #good-side-tag {
   color: #224cdd;
+  font-family: "Permanent Marker", cursive;
 }
 
 #evil-side-tag {
   color: #ee111c;
+  font-family: "Permanent Marker", cursive;
 }
 
 #tic-tac-toe-grid {
@@ -90,8 +93,9 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   gap: 10px;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .button-gameMode {
@@ -99,4 +103,48 @@ h1 {
   width: 9rem;
   font-weight: bold;
   text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#button-gameMode-player {
+  background-color: rgb(4, 148, 4);
+}
+
+#button-gameMode-ai {
+  background-color: rgb(203, 182, 20);
+}
+
+.button-gameMode:hover {
+  transform: translateY(-8%);
+}
+
+#button-gameMode-player:hover {
+  box-shadow: rgb(4, 148, 4) 0px 8px 20px;
+}
+
+#button-gameMode-ai:hover {
+  box-shadow: rgb(203, 182, 20) 0px 5px 17px;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+  transform: scale(0);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#overlay h2 {
+  font-size: 3rem;
+  color: white;
 }
