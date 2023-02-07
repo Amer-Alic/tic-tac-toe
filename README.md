@@ -1,13 +1,13 @@
 # TIC-TAC-TOE GAME WITH UNBEATABLE AI
 ## WHAT DID I LEARN:
 - Better understanding of modules and constructor functions
-- Improved understanding about how javascript functions 
+- Improved understanding about how javascript works 
 - **Learnd how to think recursively and implemented that within minimax algorithm for AI**
 ### In future I would like to add:
 - Precision for AI
 - Better animations
 ### I am really proud of this part:
-`function minimax(gameBoard, isMax) {
+` function minimax(gameBoard, isMax) {
     let result = checkWinner();
     if (result !== undefined) {
       return scores[result];
@@ -44,7 +44,7 @@
       }
       return bestScore;
     }
-  }`
+  } `
   
   ---
   **Here is [live preview]()**
