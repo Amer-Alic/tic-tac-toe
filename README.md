@@ -47,4 +47,4 @@
   } `
   
   ---
-  **Here is [live preview]()**
+  **Here is [live preview](https://amer-tech.github.io/tic-tac-toe/)**
