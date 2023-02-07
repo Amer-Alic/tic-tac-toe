@@ -7,6 +7,7 @@
 
 body {
   background-image: url(allImages/89491-milky-way-digital-universe-galaxy-nature-hd-4k-5k-stars.jpg);
+  height: 100vh;
 }
 
 h1 {
@@ -139,12 +140,39 @@ h1 {
   bottom: 0;
   display: grid;
   place-items: center;
-  z-index: 2;
+  z-index: 50;
   transform: scale(0);
   transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
 }
 
 #overlay h2 {
   font-size: 3rem;
   color: white;
+}
+
+@media (max-width: 715px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #grid {
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+  }
+
+  #grid-cell.O,
+  #grid-cell.X {
+    background-size: 5rem;
+  }
+
+  #overlay h2 {
+    font-size: 2.5rem;
+  }
+
+  .button-gameMode {
+    height: 2rem;
+    width: 7rem;
+    font-size: 0.7rem;
+  }
 }
